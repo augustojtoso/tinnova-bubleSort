@@ -1,13 +1,22 @@
 package com.tinnova.bubleSort;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import java.util.ArrayList;
 
-@SpringBootApplication
 public class BubleSortApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BubleSortApplication.class, args);
+		ArrayList<Integer> arrayList = new ArrayList<>();
+		arrayList.add(5);
+		arrayList.add(3);
+		arrayList.add(2);
+		arrayList.add(4);
+		arrayList.add(7);
+		arrayList.add(1);
+		arrayList.add(0);
+		arrayList.add(6);
+
+		BubleSortService bubleSortService = new BubleSortService();
+		System.out.print("Sorted list: " + bubleSortService.sort(arrayList));
 	}
 
 }
