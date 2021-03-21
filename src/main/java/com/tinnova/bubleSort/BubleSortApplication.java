@@ -15,8 +15,9 @@ public class BubleSortApplication {
 		arrayList.add(0);
 		arrayList.add(6);
 
+		System.out.println("Unsorted list: " + arrayList);
 		BubleSortService bubleSortService = new BubleSortService();
-		System.out.print("Sorted list: " + bubleSortService.sort(arrayList));
+		System.out.println("Sorted list: " + bubleSortService.sort(arrayList));
 	}
 
 }
